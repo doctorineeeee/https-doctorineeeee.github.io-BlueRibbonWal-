@@ -1,0 +1,54 @@
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #adf7fa;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+
+h2 {
+    color: #007bff;
+}
+
+.data-entry {
+    margin-bottom: 10px;
+}
+
+.data-entry span {
+    font-weight: bold;
+}
+
+    .potato {
+        max-width: 400px;
+        padding: 20px;
+        background-color: #93f8eb;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        margin:auto;
+        border-radius: 20px;
+        margin-top:20px;
+    }
+
+    h1 {
+        color: #007bff;
+        margin-bottom: 20px;
+    }
+
+    p {
+        margin: 10px 0;
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 4px;
+        transition: background-color 0.2s ease;
+    }
+
+    .btn:hover {
+        background-color: #0056b3;
+    }

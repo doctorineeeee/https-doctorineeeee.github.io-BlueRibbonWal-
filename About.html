@@ -1,0 +1,205 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="Overall.css">
+    <link rel="stylesheet" type="text/css" href="About.css">
+    <script src="Overall.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <div class="ribbon">
+      <i></i>
+      <i></i>
+      <i></i>
+      <i></i>
+     </div>
+        <div class="nav" >
+            <img class="Logo" src="Images/Logo.jpg">
+              <a href="Homepage.html">Home</a>
+            <a href="About.html">About Us</a>
+            <a href="Event.html">Event</a>
+
+            <a href="Contactus.html">Contact</a>
+            </div>
+        </div>
+        
+<section class="section2" id="AboutUs">
+  <table>
+  <tr>
+  <td>
+  <img src="Images/mission.jpg" alt="AboutUs">
+  </td>
+  <td>
+  <span class="title">Our Misson</span>
+  <p>At Blue Ribbon Walk, our mission is to actively work towards the prevention of child abuse and create a world where every child feels safe, loved, and nurtured. We are committed to raising awareness about the prevalence and impact of child abuse while providing support to survivors and their families. Through community engagement, education, and advocacy, we strive to break the cycle of abuse and promote an environment where every child can thrive.</p>
+  <a href="#OurMission" class="btn1">Our Vision</a> <a href="Event.html" class="btn2">Know More</a>
+  </td>
+  </tr>
+  </table>
+  </section>
+  
+  <section class="section3" id="OurMission">
+  <table>
+  <tr>
+  <td>
+  <span class="title">Our Vision</span>
+  <p>Our vision is a society free from child abuse, where children grow up in an atmosphere of compassion, respect, and understanding. We envision a world where child abuse is not only actively prevented but also acknowledged and addressed promptly, providing comprehensive support to those affected. We aim to build a community that prioritizes the safety and well-being of its children, ensuring they have the opportunity to reach their full potential.</p>
+
+  <a href="Event.html" class="btn2">Know More</a>
+  </td>
+  <td>
+  <img src="Images/Vision.jpg" alt="AboutUs">
+  </td>
+  </tr>
+  </table>
+  </section>
+
+
+
+
+
+
+
+
+  <div id="header">
+    <h1>Core Team</h1>
+  </div>
+  
+  <div class="site-wrap">
+    <div class="row">
+      <div class="column">
+        <img src="Images/RandomGirl.jpg" class="align-left slide-in">
+      </div>
+      <div class="column">
+        <div class="text">
+        <h5>Rachel, Founder of Blue Ribbon SG</h5>
+          <p>In November 2008, 9-year-old Sarah was identified as a victim of severe child abuse. Initially unnoticed, the abuse came to light when a concerned teacher noticed behavioral changes in March 2008. Sarah bravely shared her story in October, leading to her official identification as a child abuse victim. Grateful for her foster family, social workers, and therapist, Sarah has rebuilt her life through therapeutic activities like art, music, and equine-assisted therapy. Today, she advocates for other survivors as a peer mentor and support group facilitator, supporting their journey to healing and empowerment.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row reverse">
+      <div class="column">
+        <img src="Images/aboutethan.jpg" class="align-right slide-in">
+      </div>
+      <div class="column">
+        <div class="text">
+          <h5> Ethan, Co-Founder of Blue Ribbon SG</h5>
+            <p>In September 2018, Ethan, a 6-year-old boy, was discovered as a victim of prolonged child abuse. Despite the abuse being hidden, a perceptive school counselor noticed signs of distress in Ethan's behavior in May 2000. Encouraging him to open up, Ethan found the courage to disclose his painful experiences in October, leading to his official recognition as a child abuse victim.
+
+              Reflecting on his tumultuous journey, Ethan expresses profound gratitude for his caring foster parents, dedicated child protection workers, and his compassionate therapist, who have been instrumental in his recovery and transformation.</p>
+          </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <img src="Images/aboutwoman.jpg" class="align-left slide-in">
+      </div>
+      <div class="column">
+        <div class="text">
+          <h5> Sarah, Event Organizer and support group facilitator</h5>
+            <p>In May 2005, Mia, a 10-year-old girl, was identified as a victim of severe child abuse. Despite the abuse going unnoticed, a perceptive teacher observed changes in Mia's behavior in February 2005. Encouraging her to share her experiences, Mia bravely disclosed the abuse in June, leading to her official recognition as a child abuse victim.
+
+              Grateful for dedicated child protection workers, and her empathetic counselor, Mia has embarked on a journey of healing and growth. Participating in therapeutic activities like art therapy and outdoor adventures provided by organizations.</p>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  
+ 
+<script>
+function debounce(func, wait = 20, immediate = true) {
+var timeout;
+
+return function() {
+var context = this, args = arguments;
+
+var later = function() {
+timeout = null;
+if (!immediate) func.apply(context, args);
+};
+
+var callNow = immediate && !timeout;
+clearTimeout(timeout);
+timeout = setTimeout(later, wait);
+
+if (callNow) func.apply(context, args);
+};
+};
+
+const sliderImages = document.querySelectorAll('.slide-in');
+
+function checkSlide(e) {
+sliderImages.forEach(sliderImage => {
+const slideInAt = (window.scrollY + window.innerHeight) - sliderImage.height / 2;
+const imageBottom = sliderImage.offsetTop + sliderImage.height;
+const isHalfShown = slideInAt > sliderImage.offsetTop;
+const isNotScrolledPast = window.scrollY < imageBottom;
+
+if(isHalfShown && isNotScrolledPast) {
+sliderImage.classList.add('active');
+} else {
+sliderImage.classList.remove('active');
+}
+});
+}
+
+window.addEventListener('scroll', debounce(checkSlide));
+</script>
+
+
+<a href="#" class="top">Back to Top &#8593;</a>
+
+
+
+
+        <footer class="footer-distributed">
+
+            <div class="footer-left">
+      
+              <h3><a href="Homepage.html"> <img src="Images/Logo.jpg"></a></h3>
+      
+              <p class="footer-links">
+                <a href="Homepage.html">Home</a>
+                <a href="About.html">About Us</a>
+                <a href="Event.html">Event</a>
+                <a href="Contactus.html">Contact</a>
+              </p>
+      
+              <p class="footer-company-name">Blue Ribbon Walk © 2023</p>
+            </div>
+      
+            <div class="footer-center">
+      
+              <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>17 Rochdale Rd</span> Singapore</p>
+              </div>
+      
+              <div>
+                <i class="fa fa-phone"></i>
+                <p>+65 62826440</p>
+              </div>
+      
+              <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:support@company.com">support@BlueRibbonWalkSG.com</a></p>
+              </div>
+      
+            </div>
+      
+            <div class="footer-right">
+      
+              <p class="footer-company-about">
+                <span>About the Blue Ribbon Walk</span>
+                Striving to foster a community of empathy and understanding. Inspirational guest speakers and advocates shed light on the impact of child abuse, equipping attendees with knowledge and resources to become champions of change. With your participation, we can make a lasting impact and ensure that no child is left to face the scars of abuse alone.
+              </p>
+      
+            </div>
+      
+          </footer>
+</body>
+</html>

@@ -1,0 +1,185 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="Overall.css">
+    <link rel="stylesheet" type="text/css" href="Contactus.css">
+    <script src="Overall.js"></script>
+    
+</head>
+<body>
+    <div class="wrap">
+        <div class="ribbon">
+      <i></i>
+      <i></i>
+      <i></i>
+      <i></i>
+     </div>
+        <div class="nav" >
+            <img class="Logo" src="Images/Logo.jpg">
+              <a href="Homepage.html">Home</a>
+            <a href="About.html">About Us</a>
+            <a href="Event.html">Event</a>
+            <a href="Contactus.html">Contact</a>
+            </div>
+        </div>
+
+
+        
+
+        <div class="page-wrapper bg-gra-02 p-t-130 p-b-100 font-poppins">
+          <div class="wrapper wrapper--w680">
+              <div class="card card-4">
+                  <div class="card-body">
+                      <h2 class="title">Contact Us</h2>
+                      <form method="POST" id="registrationForm">
+                          <div class="row row-space">
+                              <div class="col-2">
+                                  <div class="input-group">
+                                      <label class="label">first name</label>
+                                      <input class="input--style-4" type="text" name="first_name" required>
+                                  </div>
+                              </div>
+                              <div class="col-2">
+                                  <div class="input-group">
+                                      <label class="label">last name</label>
+                                      <input class="input--style-4" type="text" name="last_name" required>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="row row-space">
+                              
+                          </div>
+                          <div class="row row-space">
+                              <div class="col-2">
+                                  <div class="input-group">
+                                      <label class="label">Email</label>
+                                      <input class="input--style-4" type="email" name="email" required>
+                                  </div>
+                              </div>
+                              <div class="col-2">
+                                  <div class="input-group">
+                                      <label class="label">Phone Number</label>
+                                      <input class="input--style-4" type="text" name="phone" required>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="row row-space">
+                            <div class="col-4">
+                                <div class="input-group">
+                                    <label class="label">Message</label>
+                                    <textarea class="input--style-4" name="message" style="height:200px;width:550px;"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        
+        
+                          <div class="p-t-15">
+                              <button class="btn btn--radius-2 btn--blue" type="submit">Submit</button>
+                          </div>
+                      </form>
+                      
+                  </div>
+                  
+              </div>
+              <h2 style="padding-top:20px; text-align:center;">Where we are located<br>17 Rochdale Rd
+                17 Rochdale Rd, Singapore 535831</h2>
+              <div id="map-container">
+                
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.7214332760786!2d103.8810746758852!3d1.3435442615941786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da17964256233b%3A0x9efad4c8510fa3f0!2s17%20Rochdale%20Rd%2C%20Singapore%20535831!5e0!3m2!1sen!2ssg!4v1690399851602!5m2!1sen!2ssg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen ></iframe>
+              </div>
+
+          </div>
+          
+        </div>
+        
+
+
+
+
+
+        
+      <script>
+        // Get the form element
+        const form = document.getElementById('registrationForm');
+        
+        // Function to convert form data to URL parameters
+        function formDataToUrlParams(formData) {
+            const params = new URLSearchParams();
+            formData.forEach((value, key) => {
+                params.append(key, value);
+            });
+            return params.toString();
+        }
+
+        // Add an event listener to the form's submit event
+        form.addEventListener('submit', (event) => {
+            event.preventDefault(); // Prevent form submission
+
+            // Get the form data
+            const formData = new FormData(form);
+
+            // Convert form data to URL parameters
+            const urlParams = formDataToUrlParams(formData);
+
+            // Redirect to the other webpage with the form data as URL parameters
+            window.location.href = `Thankyou.html?${urlParams}`;
+        });
+    </script>
+
+
+
+
+
+
+
+        <a href="#" class="top">Back to Top &#8593;</a>
+        <footer class="footer-distributed">
+
+            <div class="footer-left">
+      
+              <h3><a href="Homepage.html"> <img src="Images/Logo.jpg"></a></h3>
+      
+              <p class="footer-links">
+                <a href="Homepage.html">Home</a>
+                <a href="About.html">About Us</a>
+                <a href="Event.html">Event</a>
+                <a href="Contactus.html">Contact</a>
+              </p>
+      
+              <p class="footer-company-name">Blue Ribbon Walk © 2023</p>
+            </div>
+      
+            <div class="footer-center">
+      
+              <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>17 Rochdale Rd</span> Singapore</p>
+              </div>
+      
+              <div>
+                <i class="fa fa-phone"></i>
+                <p>+65 62826440</p>
+              </div>
+      
+              <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:support@company.com">support@BlueRibbonWalkSG.com</a></p>
+              </div>
+      
+            </div>
+      
+            <div class="footer-right">
+      
+              <p class="footer-company-about">
+                <span>About the Blue Ribbon Walk</span>
+                Striving to foster a community of empathy and understanding. Inspirational guest speakers and advocates shed light on the impact of child abuse, equipping attendees with knowledge and resources to become champions of change. With your participation, we can make a lasting impact and ensure that no child is left to face the scars of abuse alone.
+              </p>
+      
+            </div>
+      
+          </footer>
+</body>
+</html>

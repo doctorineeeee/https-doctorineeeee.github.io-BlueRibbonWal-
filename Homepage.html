@@ -1,0 +1,219 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="Overall.css">
+    <link rel="stylesheet" type="text/css" href="Homepage.css">
+    <script src="Overall.js"></script>
+    </head>
+<body>
+    <div class="wrap">
+        <div class="ribbon">
+      <i></i>
+      <i></i>
+      <i></i>
+      <i></i>
+     </div>
+        <div class="nav" >
+            <img class="Logo" src="Images/Logo.jpg">
+            <a href="Homepage.html">Home</a>
+            <a href="About.html">About Us</a>
+            <a href="Event.html">Event</a>
+            <a href="Contactus.html">Contact</a>
+            </div>
+      </div>
+        <div class="slideshow-containers">
+
+            <div class="mySlides fade">
+              <img src="Images/Blue.png" alt="BlueRibbonWalk" style="width:58%">
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="Images/Boy.jpg" alt="BlueRibbonWalk" style="width:58%">
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="Images/all.jpg" alt="BlueRibbonWalk" style="width:58%">
+            </div>
+
+            <div class="mySlides fade">
+              <img src="Images/5kids.jpg" alt="BlueRibbonWalk" style="width:58%">
+            </div>
+            
+            </div>
+            
+            <div style="text-align:center">
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+            </div>
+            
+            <script>
+            let slideIndex = 0;
+            showSlides();
+            
+            function showSlides() {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+              setTimeout(showSlides, 2000); // Change image every 2 seconds
+            }
+            </script>    
+          <div>
+        <h1 class="Colour">Take a Stand,<br>Volunteer Today: Change a Life,<br> One Act at a Time!</h1></div>
+            <div style="background: #ffffff; border-radius:10px;">
+              <h1 class="header1">1 in 7 children have experienced child abuse</h1>
+              <p class="thetexts">A heartbreaking statistic that demands our attention. Blue Ribbon SG, our annual charity event, aims to make a lasting impact on the lives of these vulnerable children. <br>Taking place during a dedicated month for child abuse awareness, our campaign seeks to increase awareness, raise funds, and advocate for the early detection and support of abused children in Singapore.
+
+                <br>During the Blue Ribbon SG event, we encourage everyone to proudly wear the blue ribbon, an iconic symbol representing our commitment to protecting and nurturing abused children. <br>These specially designed blue ribbon pins will be made available across the island, serving as a visible reminder of our collective efforts to bring hope and healing to these young survivors.</p>
+                <h2 class="header2">Through this significant campaign</h2>
+                <p class="thetexts">We strive to create a safe and supportive environment for abused children. Our goal is to empower individuals and communities to recognize the signs of abuse, provide assistance, and actively contribute to the recovery process. <br>By participating in Blue Ribbon SG, you become an advocate for change, standing up against child abuse and working towards a brighter future for every child in Singapore.
+
+                  Join us in this noble cause as we come together, wearing the blue ribbon with pride. <br>Your involvement in Blue Ribbon SG will help us raise vital funds, provide support to established organizations, and create a strong network of care for abused children. <br>Together, let us bring light to their lives, ensuring that no child in Singapore has to endure abuse in silence.</p>
+              </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+              
+	<div class="containers">
+	   <div class="column">
+      <img style="height:88px;width:88px;" src="Images/Bluelogo.png" alt="BlueRibbonWalk">
+	     <h2> Blue Ribbon Walk SG </h2>
+		 <p>  Raise awareness and support for abused children. <br>Join us in wearing blue ribbons and walking together to make a difference.</p>
+	   </div>
+	   <div class="column">
+      <img style="height:88px;width:88px;" src="Images/BlueLogo2.png" alt="BlueRibbonWalk">
+	     <h2>Support Blue Ribbon SG  </h2>
+		 <p> 
+      Support the Blue Ribbon Walk SG by sponsoring or donating. <br>Help us protect and empower abused children through your generous contribution.</p>
+	   </div>
+	   <div class="column">
+      <img style="height:88px;width:88px;" src="Images/BlueLogo3.png" alt="BlueRibbonWalk">
+	     <h2> Get a Pink Ribbon Pin </h2>
+		 <p> Find the blue ribbon pins by actively participating in our event. <br>Don't miss this opportunity, as pin supplies are limited!</p>
+	   </div>
+	</div>
+
+  <div class="container">
+    <div class="card" style="--clr: #009688">
+        <div class="img-box">
+            <img src="Images/mother.jpg">
+        </div>
+        <div class="content">
+            <h2>Event</h2>
+            <p>
+              With each step taken, a statement is made against abuse, amplifying the voices of those in need.The event embodies the strength of a community united, leaving a lasting legacy of hope and support for abused children.
+            </p>
+            <a href="Event.html">Read More</a>
+        </div>
+    </div>
+    <div class="card" style="--clr: #FF3E7F">
+        <div class="img-box">
+            <img src="Images/Storepic.png">
+        </div>
+        <div class="content">
+            <h2>Contact Us</h2>
+            <p>
+              Dedicated to supporting the prevention of child abuse. We believe that every child deserves a safe and nurturing environment to grow and thrive. If you have any questions, suggestions, or would like to get involved in our cause, you've come to the right place!
+            </p>
+            <a href="Contactus.html">Read More</a>
+        </div>
+    </div>
+    <div class="card" style="--clr: #03A9F4">
+        <div class="img-box">
+            <img src="Images/Aboutus.png">
+        </div>
+        <div class="content">
+            <h2>About Us</h2>
+            <p>
+              Comprised of passionate individuals driven by a common purpose, we are committed to making a positive difference in the lives of those who have experienced abuse. 
+            </p>
+            <a href="About.html">Read More</a>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a href="#" class="top">Back to Top &#8593;</a>
+        <footer class="footer-distributed">
+
+          <div class="footer-left">
+    
+            <h3><a href="Homepage.html"> <img src="Images/Logo.jpg"></a></h3>
+    
+            <p class="footer-links">
+              <a href="Homepage.html">Home</a>
+              <a href="About.html">About Us</a>
+              <a href="Event.html">Event</a>
+              <a href="Contactus.html">Contact</a>
+            </p>
+    
+            <p class="footer-company-name">Blue Ribbon Walk © 2023</p>
+          </div>
+    
+          <div class="footer-center">
+    
+            <div>
+              <i class="fa fa-map-marker"></i>
+              <p><span>17 Rochdale Rd</span> Singapore</p>
+            </div>
+    
+            <div>
+              <i class="fa fa-phone"></i>
+              <p>+65 62826440</p>
+            </div>
+    
+            <div>
+              <i class="fa fa-envelope"></i>
+              <p><a href="mailto:support@company.com">support@BlueRibbonWalkSG.com</a></p>
+            </div>
+    
+          </div>
+    
+          <div class="footer-right">
+    
+            <p class="footer-company-about">
+              <span>About the Blue Ribbon Walk</span>
+              Striving to foster a community of empathy and understanding. Inspirational guest speakers and advocates shed light on the impact of child abuse, equipping attendees with knowledge and resources to become champions of change. With your participation, we can make a lasting impact and ensure that no child is left to face the scars of abuse alone.
+            </p>
+    
+          </div>
+    
+        </footer>
+</body>
+</html>
